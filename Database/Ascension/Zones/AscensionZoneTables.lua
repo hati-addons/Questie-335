@@ -9,6 +9,12 @@ AscensionZoneTables.uiMapIdToAreaId = AscensionZoneTables.uiMapIdToAreaId or {
 	[1226] = 12, -- Echo Ridge Mine -> Elwynn Forest
 	[1222] = 12, -- Jasperlode mine -> Elwynn Forest
 	[1239] = 1, -- Coldridge Valley -> Dun Morogh
+	[1243] = 141, -- Shadowglen -> Teldrassil
+	[1233] = 141, -- Shadowthread Cave -> Teldrassil
 	--Horde
 	[1244] = 14, -- Valley of Trials -> Durotar
+	[1244] = 85, -- Deathknell -> Tirisfal Glades
+	[1213] = 85, -- Night Web's Hollow -> Tirisfal Glades
+	[1245] = 215, -- Camp Narache -> Mulgore
+	
 }

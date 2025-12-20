@@ -7,6 +7,7 @@ local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 
 ---@type table
 local AscensionDB = QuestieLoader:ImportModule("AscensionDB")
+_G.AscensionDB = _G.AscensionDB or AscensionDB
 
 local _overridesInjected = false
 local _zonesApplied = false

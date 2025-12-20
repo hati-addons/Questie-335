@@ -2,6 +2,30 @@
 AscensionUiMapData = AscensionUiMapData or {}
 
 AscensionUiMapData.uiMapData = {
+	-- Alliance Starting Zone
+
+	    [1243] = {
+        [1] = 1450.0040000000001,
+        [2] = 966.5999999999985,
+        [3] = 1491.67,
+        [4] = 11033.3,
+        instance = 1,
+        mapID = 1243,
+        name = "Shadowglen",
+        mapType = 3,
+        parentMapID = 10143,
+    },
+	    [1233] = {
+        [1] = 480.0,
+        [2] = 320.0,
+        [3] = 1140.0,
+        [4] = 11035.0,
+        instance = 1,
+        mapID = 1233,
+        name = "Shadowthread Cave",
+        mapType = 3,
+        parentMapID = 257,
+    },
 	    [1222] = {
         [1] = 323.25,
         [2] = 215.5,
@@ -79,17 +103,7 @@ AscensionUiMapData.uiMapData = {
 		instance    = 0,
 		name        = "Scarlet Monastery Entrance",
 	},
-		[2001] = {
-		[1] = 4000.002,
-		[2] = 2666.67,
-		[3] = 533.332,
-		[4] = 11733.3,
-		mapType     = 3,
-		parentMapID = 10007,
-		mapID       = 2001,
-		instance    = 920,
-		name        = "SpellDevMap",
-	},
+
 		[2029] = {
 		[1] = 499.9961,
 		[2] = 333.33,
@@ -102,7 +116,6 @@ AscensionUiMapData.uiMapData = {
 		name        = "Secret Inquisitorial Dungeon",
 	},
 
-	--
 		[1239] = {
 		[1] = 1266.8,
 		[2] = 842.0,
@@ -114,7 +127,9 @@ AscensionUiMapData.uiMapData = {
 		instance    = 0,
 		name        = "Coldridge Valley",
 		},
-	--
+
+	-- Horde Starting Zone
+
 	    [1244] = {
         [1] = 1350.0,
         [2] = 900.0,
@@ -126,7 +141,39 @@ AscensionUiMapData.uiMapData = {
         mapType = 3,
         parentMapID = 10144,
     },
-
+	    [1240] = {
+        [1] = 1089.5900000000001,
+        [2] = 727.0799999999999,
+        [3] = 2147.92,
+        [4] = 2270.83,
+        instance = 0,
+        mapID = 1240,
+        name = "Deathknell",
+        mapType = 3,
+        parentMapID = 10140,
+    },
+	    [1213] = {
+        [1] = 220.0,
+        [2] = 146.66999999999985,
+        [3] = 2020.0,
+        [4] = 2123.33,
+        instance = 0,
+        mapID = 1213,
+        name = "Night Web's Hollow",
+        mapType = 3,
+        parentMapID = 10118,
+    },
+	    [1245] = {
+        [1] = 1799.8799999999999,
+        [2] = 1200.0400000000004,
+        [3] = 266.54,
+        [4] = -2566.74,
+        instance = 1,
+        mapID = 1245,
+        name = "Camp Narache",
+        mapType = 3,
+        parentMapID = 10146,
+    },
 }
 
 local function ApplyUiMapData()

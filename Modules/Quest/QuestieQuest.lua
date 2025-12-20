@@ -575,6 +575,9 @@ function QuestieQuest:UpdateQuest(questId)
 
     ---@type Quest
     local quest = QuestieDB.GetQuest(questId)
+    -- Ascension/custom quests may omit sourceItemId in the DB override tables.
+    -- Normalize to a number so comparisons don't crash (e.g. nil > 0).
+    local sourceItemId = (quest and tonumber(quest.sourceItemId)) or 0
 
     if quest and (not Questie.db.char.complete[questId]) then
         QuestieQuest:PopulateQuestLogInfo(quest)
@@ -612,7 +615,7 @@ function QuestieQuest:UpdateQuest(questId)
             -- Quest was somehow reset back to incomplete after being completed (quest.WasComplete == true).
             -- The "or" check looks for a sourceItemId then checks to see if it's NOT in the players bag.
             -- Player destroyed quest items? Or some other quest mechanic removed the needed quest item.
-            if quest and (quest.WasComplete or (quest.sourceItemId > 0 and QuestieQuest:CheckQuestSourceItem(questId) == false)) then
+            if quest and (quest.WasComplete or (sourceItemId > 0 and QuestieQuest:CheckQuestSourceItem(questId) == false)) then
                 Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieQuest:UpdateQuest] Quest was once complete or Quest Item(s) were removed. Resetting quest.")
 
                 -- Reset quest objectives
@@ -890,11 +893,13 @@ end
 function QuestieQuest:CheckQuestSourceItem(questId, makeObjective)
     local quest = QuestieDB.GetQuest(questId)
     local sourceItem = true
-    if quest and quest.sourceItemId > 0 then
+    local sourceItemId = (quest and tonumber(quest.sourceItemId)) or 0
+
+    if quest and sourceItemId > 0 then
         for bag = -2, 4 do
             for slot = 1, QuestieCompat.GetContainerNumSlots(bag) do
                 local itemId = select(10, QuestieCompat.GetContainerItemInfo(bag, slot))
-                if itemId == quest.sourceItemId then
+                if itemId == sourceItemId then
                     return true
                 end
             end
@@ -906,7 +911,7 @@ function QuestieQuest:CheckQuestSourceItem(questId, makeObjective)
         -- player has a visual indication as to what item is missing and so the quest has a "tag" of some kind.
         -- Also double check the quests leaderboard and make sure an objective doesn't already exist.
         if (not sourceItem) and makeObjective and (not QuestieQuest:GetAllLeaderBoardDetails(quest.Id)[1]) then
-            local itemName = QuestieDB.QueryItemSingle(quest.sourceItemId, "name")
+            local itemName = QuestieDB.QueryItemSingle(sourceItemId, "name")
             quest.Objectives = {
                 [1] = {
                     Description = itemName,
@@ -914,7 +919,7 @@ function QuestieQuest:CheckQuestSourceItem(questId, makeObjective)
                     Needed = 1,
                     Collected = 0,
                     Completed = false,
-                    Id = quest.sourceItemId,
+                    Id = sourceItemId,
                     questId = quest.Id
                 }
             }

@@ -183,14 +183,32 @@ _CalculateAvailableQuests = function()
     end
 
     local questCount = 0
+
+    -- 1) Base Questie DB (compiled pointers)
     for questId in pairs(questData) do
         _DrawQuestIfAvailable(questId)
 
-        -- Reset the questCount
         questCount = questCount + 1
         if questCount > QUESTS_PER_YIELD then
             questCount = 0
             yield()
+        end
+    end
+
+    -- 2) Ascension override quests (not present in QuestPointers)
+    -- These are injected into QuestieDB.questDataOverrides by AscensionLoader.
+    local ascensionQuestIds = QuestieDB.ascensionQuestIds or QuestieDB.questDataOverrides
+    if type(ascensionQuestIds) == "table" then
+        for questId in pairs(ascensionQuestIds) do
+            if type(questId) == "number" then
+                _DrawQuestIfAvailable(questId)
+
+                questCount = questCount + 1
+                if questCount > QUESTS_PER_YIELD then
+                    questCount = 0
+                    yield()
+                end
+            end
         end
     end
 end
