@@ -13,7 +13,9 @@ AscensionZoneTables.uiMapIdToAreaId = AscensionZoneTables.uiMapIdToAreaId or {
 	[1233] = 141, -- Shadowthread Cave -> Teldrassil
 	--Horde
 	[1244] = 14, -- Valley of Trials -> Durotar
-	[1244] = 85, -- Deathknell -> Tirisfal Glades
+	[1217] = 14, -- Burning Blade Coven -> Durotar
+	[2030] = 14, -- Sinister Lair -> Durotar
+	[1240] = 85, -- Deathknell -> Tirisfal Glades
 	[1213] = 85, -- Night Web's Hollow -> Tirisfal Glades
 	[1245] = 215, -- Camp Narache -> Mulgore
 	

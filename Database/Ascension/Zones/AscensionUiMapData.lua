@@ -129,7 +129,28 @@ AscensionUiMapData.uiMapData = {
 		},
 
 	-- Horde Starting Zone
-
+        [2030] = {
+        [1] = 550.29,
+        [2] = 366.6328125,
+        [3] = -4100.0,
+        [4] = 0.0078125,
+        instance = 1,
+        mapID = 2030,
+        name = "Sinister Lair",
+        mapType = 3,
+        parentMapID = 10205,
+    },
+        [1217] = {
+        [1] = 266.0,
+        [2] = 177.33,
+        [3] = -4166.5,
+        [4] = 5.5,
+        instance = 1,
+        mapID = 1217,
+        name = "Burning Blade Coven",
+        mapType = 3,
+        parentMapID = 365,
+    },
 	    [1244] = {
         [1] = 1350.0,
         [2] = 900.0,
