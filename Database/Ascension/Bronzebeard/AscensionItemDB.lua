@@ -22,7 +22,6 @@ AscensionDB.itemData = AscensionDB.itemData or {
 		[157012]={[1]="Smudged Note",[2]=nil,[3]=nil,[4]=nil,[5]=nil,[6]=nil,[7]=0,[8]=nil,[9]=1,[10]=1,[11]=nil,[12]=15,[13]=0,[14]=nil,[15]={17005}},
 		[157014]={[1]="Mirror Lake Apple",[2]=nil,[3]={9017008},[4]=nil,[5]=nil,[6]=nil,[7]=nil,[8]=nil,[9]=1,[10]=8,[11]=nil,[12]=15,[13]=0,[14]=nil,[15]={17008}},
 
-
 		--Durotar 
 		[11584] = {'Cactus Apple Surprise',nil,nil,nil,nil,nil,nil,nil,5,0,0,4,0,nil,{254010}},  
 		[254005] = {'Strange Flower',nil,{254001},nil,nil,nil,nil,nil,1,0,0,12,0,nil,{254008}},
@@ -32,12 +31,11 @@ AscensionDB.itemData = AscensionDB.itemData or {
 		[559149] = {'Spider Spiritual Essence',{161795},nil,nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660020}},
 		[559150] = {'Serpent Spiritual Essence',{161794},nil,nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660020}},
 		[559155] = {'Spiritual Unrest',{30719},nil,nil,nil,nil,nil,nil,0,0,0,4,0,nil,nil},
-		[559158] = {'Unremarkable Stone',nil,nil,nil,nil,nil,nil,64,1,0,0,12,0,nil,nil},
+		[559158] = {'Unremarkable Stone',nil,nil,nil,nil,nil,nil,1,1,0,0,12,0,nil,nil},
 		[559172] = {'Fire Elemental Shackles',nil,{1064805},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
 		[559173] = {'Earth Elemental Shackles',nil,{2392807},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
 		[559174] = {'Air Elemental Shackles',nil,{3478505},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
 		[559175] = {'Water Elemental Shackles',nil,{4541078},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
-		
 }
 
 AscensionItemDB=AscensionItemDB or {}

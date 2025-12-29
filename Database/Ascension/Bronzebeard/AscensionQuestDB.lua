@@ -36,7 +36,6 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1660060]={[1]="Stay a While",[2]={{162806}},[3]={{162806}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Take a moment from the noise and haste and stay a while to listen to Aliscar Lend.","","- Listen to Aliscar Lend x 1"},[9]=nil,[10]={[1]={{162943,"Listen to Aliscar Lend"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12},
 		[100071]={[1]="Defias Disruption",[2]={{6778}},[3]={{6778}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Thin the ranks of the Defias at the Bandit Bastion, east of Goldshire.","","- Defias Bandit x 6","- Defias Rogue Wizard x 4"},[9]=nil,[10]={[1]={{116,"Defias Bandit slain"},{474,"Defias Rogue Wizard slain"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
 
-
 		--Durotar 
 		
 		[254008]={[1]="To Find a Cure",[2]={{254011}},[3]={{254011}},[4]=1,[5]=2,[6]=0,[7]=0,[8]={"Find the strange flower."},[10]={nil,nil,{{254005}}},[17]=1244},
@@ -51,6 +50,8 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1660037]={[1]="Unease Makes Tongues Wag",[2]={{161733}},[3]={{161733}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Destroy the talking Tiki Masks around Zeb'Goro."},[10]={{{161854},{161855},{161856}},nil,nil},[11]=559146,[13]={1660018},[17]=1244},
 		[1660041]={[1]="A Door Left Ajar",[2]={{161734}},[3]={{161734}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Defeat Techla'tu, Gatekeeper, in the Sinister Lair."},[10]={{{161833},{161793},{161792}},nil,nil},[13]={1660019},[17]=2030},
 		[1660061]={[1]="Esgramor's Master",[2]={{161732}},[4]=4,[5]=8,[6]=0,[7]=0,[8]={"Speak with Karagar in Razor Hill."},[10]={nil,{{9070546}},nil},[13]={1660022},[17]=1244},
+
+
 }
 
 AscensionQuestDB = AscensionQuestDB or {}

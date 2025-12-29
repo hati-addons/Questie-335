@@ -20,3 +20,21 @@ AscensionZoneTables.uiMapIdToAreaId = AscensionZoneTables.uiMapIdToAreaId or {
 	[1245] = 215, -- Camp Narache -> Mulgore
 	
 }
+
+-- Register zone sort names for custom zones so they can be used in quest zoneOrSort field
+AscensionZoneTables.zoneSort = AscensionZoneTables.zoneSort or {
+	[1238] = "Northshire Valley",
+	[2029] = "Secret Inquisitorial Dungeon",
+	[2028] = "Shadewell Spring",
+	[1226] = "Echo Ridge Mine",
+	[1222] = "Jasperlode Mine",
+	[1239] = "Coldridge Valley",
+	[1243] = "Shadowglen",
+	[1233] = "Shadowthread Cave",
+	[1244] = "Valley of Trials",
+	[1217] = "Burning Blade Coven",
+	[2030] = "Sinister Lair",
+	[1240] = "Deathknell",
+	[1213] = "Night Web's Hollow",
+	[1245] = "Camp Narache",
+}

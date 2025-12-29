@@ -3,7 +3,7 @@
 A fork of the WoW Classic **Questie** addon aiming to provide compatibility with **Ascension (Bronzebeard)**.
 
 ## Installation
-- [Download](https://github.com/3majed/Questie-335/archive/refs/tags/beta.zip) the archive.
+- [Download](https://github.com/3majed/Questie-335/releases) the archive.
 - Extract it into the `Interface/AddOns/` directory. The folder name should be `Questie-335`.
 - If you are playing on a custom server that emulates a previous expansion using the **3.3.5** client, you can add `-Classic` or `-TBC` to the addon folder name to load only the required files for the chosen expansion.
 - If your server doesn't provide a patch for the world map, enable the in-game setting: `Options → Advanced → Use WotLK map data`.

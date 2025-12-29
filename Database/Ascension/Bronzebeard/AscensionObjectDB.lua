@@ -32,7 +32,8 @@ AscensionDB.objectData = AscensionDB.objectData or {
 		[9903553]={[1]="Open the Dungeon Finder (I) / Green Eye",[2]=nil,[3]=nil,[4]=nil,[5]=nil,[6]=nil},
 		[9903554]={[1]="Select dungeon(s) then click Find Group",[2]=nil,[3]=nil,[4]=nil,[5]=nil,[6]=nil},
 		[99017005]={[1]="Smudged Note",[2]={17005},[3]=nil,[4]={[12]={{64.57,41.80}}},[5]=12,[6]=nil},
-
+		
+		
 		--Durotar
 		[1064805] = {"Elemental Fire",nil,nil,{[1244]={{35.31,24.22}}},1244,0},
 		[2392807] = {"Elemental Earth",nil,nil,{[1244]={{35.71,23.16}}},1244,0},
@@ -42,6 +43,7 @@ AscensionDB.objectData = AscensionDB.objectData or {
 		[6649507] = {"Report delivered to Esgramor",nil,nil,{[1244]={{44.77,67.11}}},1244,0},
 		[9070546] = {"Speak with Karagar in Razor Hill.",nil,nil,{[1244]={{44.80,67.09}}},1244,0},
 		[2036820] = {"Magical barrier crossed",nil,nil,{[2030]={{16.15,59.24}}},2030,0},
+
 }
 
 -- Backward compatibility (if any code still references AscensionObjectDB.objectData/objectDat)
