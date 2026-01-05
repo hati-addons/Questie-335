@@ -6,7 +6,7 @@
 ## Notes-esES: Ayundante de misión
 ## Notes-ptBR: Ajudante de missão
 ## Notes-frFR: Assistant de quête
-## Version: 9.6.03 beta
+## Version: 9.6.05 beta
 ## RequiredDeps:
 ## OptionalDeps: Ace3, CallbackHandler-1.0, HereBeDragons, LibDataBroker-1.1, LibDBIcon-1.0, LibSharedMedia-3.0, LibStub, LibUIDropDownMenu
 ## SavedVariables: QuestieConfig
@@ -118,6 +118,7 @@ Modules\Libs\RamerDouglasPeucker.lua
 
 # Modules
 Modules\QuestieValidateGameCache.lua
+Modules\Arrow\QuestieArrow.lua
 Modules\QuestieInit.lua
 Modules\MinimapIcon.lua
 Modules\QuestieProfessions.lua
@@ -163,6 +164,7 @@ Modules\Map\QuestieMap.lua
 Modules\Map\QuestieMapUtils.lua
 #Modules\Map\HBDHooks.lua
 Modules\Map\WeaponMasterSkills.lua
+
 
 # Quest
 Modules\Quest\AvailableQuests.lua

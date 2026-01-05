@@ -24,6 +24,8 @@ local QuestieMap = QuestieLoader:ImportModule("QuestieMap")
 local QuestieCoords = QuestieLoader:ImportModule("QuestieCoords")
 ---@type ZoneDB
 local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
+---@type QuestieArrow
+local QuestieArrow = QuestieLoader:ImportModule("QuestieArrow")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
@@ -111,6 +113,10 @@ end
 ---@param x number X coordinate
 ---@param y number Y coordinate
 function TrackerUtils:SetTomTomTarget(title, zone, x, y)
+    if QuestieArrow and QuestieArrow.SetTarget and title and zone and x and y then
+        QuestieArrow:SetTarget(title, zone, x, y)
+    end
+
     if TomTom and TomTom.AddWaypoint then
         if Questie.db.char._tom_waypoint and TomTom.RemoveWaypoint then -- remove old waypoint
             TomTom:RemoveWaypoint(Questie.db.char._tom_waypoint)

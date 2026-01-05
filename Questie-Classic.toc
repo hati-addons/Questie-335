@@ -113,6 +113,7 @@ Modules\Libs\RamerDouglasPeucker.lua
 
 # Modules
 Modules\QuestieValidateGameCache.lua
+Modules\Arrow\QuestieArrow.lua
 Modules\QuestieInit.lua
 Modules\MinimapIcon.lua
 Modules\QuestieProfessions.lua
@@ -158,6 +159,7 @@ Modules\Map\QuestieMap.lua
 Modules\Map\QuestieMapUtils.lua
 Modules\Map\HBDHooks.lua
 Modules\Map\WeaponMasterSkills.lua
+
 
 # Quest
 Modules\Quest\AvailableQuests.lua

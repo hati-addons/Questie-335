@@ -11,6 +11,10 @@ AscensionZoneTables.uiMapIdToAreaId = AscensionZoneTables.uiMapIdToAreaId or {
 	[1239] = 1, -- Coldridge Valley -> Dun Morogh
 	[1243] = 141, -- Shadowglen -> Teldrassil
 	[1233] = 141, -- Shadowthread Cave -> Teldrassil
+	[1232] = 141, -- Fel Rock -> Teldrassil
+	[2031] = 141, -- Moonlit Ossuary -> Teldrassil
+	[1230] = 141, -- Upper Ban'ethil Barrow Den -> Teldrassil
+	[1231] = 141, -- Lower Ban'ethil Barrow Den -> Teldrassil
 	--Horde
 	[1244] = 14, -- Valley of Trials -> Durotar
 	[1217] = 14, -- Burning Blade Coven -> Durotar
@@ -37,4 +41,8 @@ AscensionZoneTables.zoneSort = AscensionZoneTables.zoneSort or {
 	[1240] = "Deathknell",
 	[1213] = "Night Web's Hollow",
 	[1245] = "Camp Narache",
+	[1232] = "Fel Rock",
+	[2031] = "Moonlit Ossuary",
+	[1230] = "Upper Ban'ethil Barrow Den",
+	[1231] = "Lower Ban'ethil Barrow Den",
 }

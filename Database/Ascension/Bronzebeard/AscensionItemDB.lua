@@ -4,6 +4,7 @@ local AscensionDB = QuestieLoader:CreateModule("AscensionDB")
 AscensionDB.itemData = AscensionDB.itemData or {
 
 		--Elwynn Forest
+
 		[559159]={[1]="Oracular Idol",[2]={161717},[3]=nil,[4]=nil,[5]=1660036,[6]=nil,[7]=nil,[8]=nil,[9]=1,[10]=1,[11]=nil,[12]=nil,[13]=0},
 		[5055565]={[1]="Tattered Orders",[2]={991516},[3]=nil,[4]=nil,[5]=100074,[6]=nil,[7]=nil,[8]=nil,[9]=1,[10]=1,[11]=nil,[12]=nil,[13]=0},
 		[558956]={[1]="Elgris Blossom Petals",[2]=nil,[3]=nil,[4]=nil,[5]=nil,[6]=nil,[7]=nil,[8]=nil,[9]=0,[10]=0,[11]=nil,[12]=12,[13]=0,[14]={162814},[15]={1660056}},
@@ -22,7 +23,14 @@ AscensionDB.itemData = AscensionDB.itemData or {
 		[157012]={[1]="Smudged Note",[2]=nil,[3]=nil,[4]=nil,[5]=nil,[6]=nil,[7]=0,[8]=nil,[9]=1,[10]=1,[11]=nil,[12]=15,[13]=0,[14]=nil,[15]={17005}},
 		[157014]={[1]="Mirror Lake Apple",[2]=nil,[3]={9017008},[4]=nil,[5]=nil,[6]=nil,[7]=nil,[8]=nil,[9]=1,[10]=8,[11]=nil,[12]=15,[13]=0,[14]=nil,[15]={17008}},
 
+		--Teldrassil
+
+		[559143] = {[1]="Cut of Good Meat",[3]={2300512},[9]=1,[10]=0,[12]=0,[13]=0,[15]={1660014}},
+		[559144] = {[1]="Good Flesh Amalgam",[9]=1,[10]=0,[12]=12,[13]=0,[15]={1660015}},
+		[559145] = {[1]="Blessed Good Flesh Amalgam",[15]={1660015}},
+
 		--Durotar 
+
 		[11584] = {'Cactus Apple Surprise',nil,nil,nil,nil,nil,nil,nil,5,0,0,4,0,nil,{254010}},  
 		[254005] = {'Strange Flower',nil,{254001},nil,nil,nil,nil,nil,1,0,0,12,0,nil,{254008}},
 		[254006] = {'Xaitoth\'s Blood',{254015},nil,nil,nil,nil,nil,nil,1,0,0,12,0,nil,nil},

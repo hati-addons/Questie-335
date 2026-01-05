@@ -2,16 +2,21 @@
 local AscensionDB = QuestieLoader:CreateModule("AscensionDB")
 
 AscensionDB.questData = AscensionDB.questData or {
+		
+		--Path of Ascension Quests
 
-		--Elwynn Forest
-		[33]={[1]="Wolves Across the Border",[2]={{196}},[3]={{196}},[4]=1,[5]=2,[6]=1101,[7]=nil,[8]={"Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey."},[9]=nil,[10]={nil,nil,{{50432}}},[11]=nil,[12]=nil,[13]={5261},[14]=nil,[15]=nil,[16]=nil,[17]=9,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=524296,[24]=nil,[25]=nil,[26]={{72,250}}},
-		[17000]={[1]="Stolen Supplies",[2]={{250}},[3]={{250}},[4]=5,[5]=9,[6]=1101,[7]=nil,[8]={"Return the Stolen Supplies to Pa Maclure."},[9]=nil,[10]={nil,{{96000,"Retrieve the Stolen Supplies"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=nil,[24]=nil,[25]=nil,[26]={{72,25}}},
 		[1903520]={[1]="Path to Ascension: Rank Up Your Spells",[2]={{75118}},[3]={{75118}},[4]=7,[5]=8,[6]=0,[8]={"Talk to the Beginner's Book of Ascension: 0/1","Select Train Me and rank up your spells: 0/1"},[10]={nil,{{9905201,"Talk to the Beginner's Book of Ascension: 0/1"},{9905202,"Select Train Me and rank up your spells: 0/1"}}},[17]=nil,[30]=60},
 		[1903540]={[1]="Path to Ascension: Visit an Innkeeper",[2]={{75118}},[3]={{75118}},[4]=7,[5]=8,[6]=0,[8]={"Visit an Innkeeper and select Make this inn your home."},[10]={nil,{{9903540,'Visit an Innkeeper and select "Make this inn your home": 0/1'}}},[17]=nil,[30]=60},
 		[580168]={[1]="Path to Ascension: Less Running, More Ressing",[2]={{75118}},[3]={{75118}},[4]=8,[5]=8,[6]=0,[8]={"Cast Resurrect in Closest Town or Capital City next time you die.","Resurrect in Closest Town or Capital: 0/1"},[10]={nil,{{9908168,"Resurrect in Closest Town or Capital: 0/1"}}},[17]=nil,[30]=60},
 		[4420430]={[1]="Path to Ascension: Novice Rider",[2]={{97921}},[3]={{97921}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to ride and claim your first mount.","Learn Novice Riding from the Riding Trainer: 0/1"},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=12,[30]=60},
-		[1903556]={[1]="Path to Ascension: Mount Up!",[2]={{97921}},[3]={{97921}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to mount up!","Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420430},[17]=12,[30]=60},
+		[4420439] = {[1]="Path to Ascension: Novice Rider",[2]={{449169}},[4]=4,[5]=8,[6]=1101,[8]="Learn how to ride and claim your first mount.",[10]={nil,{{5773748,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=141,},
+		[1903556]={[1]="Path to Ascension: Mount Up!",[2]={{97921,449169}},[3]={{97921,449169}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to mount up!","Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420430},[17]=12,[30]=60},
 		[1903553]={[1]="Path to Ascension: Dungeon Finder",[2]={{75118}},[3]={{75118}},[4]=15,[5]=15,[6]=0,[8]={"Open the Dungeon Finder and queue for a dungeon!","Open the Dungeon Finder (I) / Green Eye: 0/1","Select dungeon(s) then click Find Group: 0/1"},[10]={nil,{{9903553,"Open the Dungeon Finder (I) / Green Eye: 0/1"},{9903554,"Select dungeon(s) then click Find Group: 0/1"}}},[17]=12},
+
+		--Elwynn Forest
+
+		[33]={[1]="Wolves Across the Border",[2]={{196}},[3]={{196}},[4]=1,[5]=2,[6]=1101,[7]=nil,[8]={"Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey."},[9]=nil,[10]={nil,nil,{{50432}}},[11]=nil,[12]=nil,[13]={5261},[14]=nil,[15]=nil,[16]=nil,[17]=9,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=524296,[24]=nil,[25]=nil,[26]={{72,250}}},
+		[17000]={[1]="Stolen Supplies",[2]={{250}},[3]={{250}},[4]=5,[5]=9,[6]=1101,[7]=nil,[8]={"Return the Stolen Supplies to Pa Maclure."},[9]=nil,[10]={nil,{{96000,"Retrieve the Stolen Supplies"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=nil,[24]=nil,[25]=nil,[26]={{72,25}}},
 		[100073]={[1]="Supply Run",[2]={{241}},[3]={{241}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Recover 4 Stolen Supply Crates from the Bandit Bastion, east of Goldshire.","","- Stolen Goods x 4"},[9]=nil,[10]={nil,{{9900730,"Stolen Supply Crate"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
 		[17001]={[1]="Extravagant Order",[2]={{241}},[3]={{241}},[4]=6,[5]=8,[6]=1101,[7]=nil,[8]={"","Return 4 Gem Encrusted Spider Silk to Tharynn Bouden.","","- Gem Encrusted Spider Silk x 4"},[9]=nil,[10]={nil,nil,{{157001,"Gem Encrusted Spider Silk"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
 		[17002]={[1]="The Master's Orders",[2]={{9000017}},[3]={{9000017}},[4]=8,[5]=10,[6]=0,[7]=nil,[8]={"","Recover 10 Depleted Mana Gems and return to the Tower of Azora.","","- Depleted Mana Gem x 10"},[9]=nil,[10]={nil,nil,{{157002,"Depleted Mana Gem"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=nil,[24]=nil,[25]=nil,[26]=nil,[27]=nil,[28]=nil,[29]=nil,[30]=nil},
@@ -35,6 +40,22 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1660005]={[1]="The Threat Swept Downstream",[2]={{161705}},[3]={{161705}},[4]=3,[5]=6,[6]=1101,[7]=nil,[8]={"Defeat the Defias lurking in the ruined tower and thin the ranks of the Shadewell murlocs atop the waterfall, across the rope bridge."},[9]=nil,[10]={[1]={{161736,"Defias Plunderer slain"},{161716,"Shadewell Murloc slain"}}},[11]=nil,[12]=nil,[13]={1660004},[14]=nil,[15]=nil,[16]=nil,[17]=9},
 		[1660060]={[1]="Stay a While",[2]={{162806}},[3]={{162806}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Take a moment from the noise and haste and stay a while to listen to Aliscar Lend.","","- Listen to Aliscar Lend x 1"},[9]=nil,[10]={[1]={{162943,"Listen to Aliscar Lend"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12},
 		[100071]={[1]="Defias Disruption",[2]={{6778}},[3]={{6778}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Thin the ranks of the Defias at the Bandit Bastion, east of Goldshire.","","- Defias Bandit x 6","- Defias Rogue Wizard x 4"},[9]=nil,[10]={[1]={{116,"Defias Bandit slain"},{474,"Defias Rogue Wizard slain"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
+		
+		--Teldrassil
+			
+		[1660012] = {[1]="The Carrion Road",[2]={{161725}},[3]={{161726}},[4]=2,[5]=6,[6]=1101,[8]="Walk the Carrion Path and defeat its guardians.",[10]={{{161787}},{{5166357}}},[17]=1243},
+		[1660013] = {[1]="The Sister Who Never Returned",[2]={{161726}},[3]={{161727}},[4]=2,[5]=6,[6]=1101,[8]="Speak with Lady Aegya, leader of the Vulture’s Cult, and ask what became of Thariel’s sister, Elydna.",[10]={nil,{{5861249}}},[13]={1660012},[17]=1243},
+		[1660014] = {[1]="Finding the Good Meat",[2]={{161727}},[3]={{161727}},[4]=2,[5]=6,[6]=1101,[8]="Gather five cuts of good meat from the Moonlit Ossuary within the Vulture Cult Eyrie.",[10]={nil,nil,{{559143}}},[13]={1660013},[17]=1243},
+		[1660015] = {[1]="Transsubstantiating the Flesh",[2]={{161727}},[3]={{161728}},[4]=2,[5]=6,[6]=1101,[8]="Carry the gathered flesh to the Moonwell and sanctify it in the waters.",[10]={nil,{{5005829}},{{559145}}},[11]=559144,[13]={1660014},[17]=1243},
+		[1660016] = {[1]="Communion Banquet",[2]={{161728}},[3]={{161727}},[4]=2,[5]=6,[6]=1101,[8]="Place the sanctified flesh upon the bowl in the Great Vulture’s nest. Then, aid Elydna in completing her communion.",[10]={nil,{{2300513},{5911478}}},[13]={1660015},[17]=1243},
+		[1660017] = {[1]="A Trail of Petals",[2]={{161848}},[3]={{161848}},[4]=2,[5]=6,[6]=1101,[8]="Channel Eldya’s power over the newborns in the Great Nest to transform them into butterflies. Then guide the butterflies back to Eldya.",[10]={nil,{{2300526},{5943833}}},[13]={1660016},[17]=1243},
+		[1660040] = {[1]="Restless entrails",[2]={{161916}},[3]={{161916}},[4]=2,[5]=6,[6]=1101,[8]="Defeat the Rotting Flesh Spawn in the Lunar Ossuary.",[10]={{{161832}},nil,nil},[17]=1243},
+		[1660071] = {[1]="A Dark Warning",[2]={{161725}},[3]={{3567}},[4]=4,[5]=8,[6]=1101,[8]="Speak with Tallonkai Swiftroot in Dolanaar.",[13]={1660085},[17]=141},
+		[1660072] = {[1]="The Aid of Theren-Dion",[2]={{3567}},[3]={{162880}},[4]=4,[5]=8,[6]=1101,[8]="Speak with the Sentinels at Theren-Dion Sanctuary and challenge them to duels to aid their training.",[10]={[5]={{{162856,162870,162871,162872,162873},"Theren-Dion Sentinel"}}},[13]={1660071},[17]=141},
+		[1660073] = {[1]="No Place for Scavengers",[2]={{162880}},[3]={{162880}},[4]=4,[5]=8,[6]=1101,[8]="Destroy Vulture Eggs around the Theren-Dion Sanctuary near Dolanaar.",[10]={{{162925}},{{5388202}}},[13]={1660072},[17]=141},
+		[1660074] = {[1]="Termites in Teldrassil",[2]={{162879}},[3]={{162879}},[4]=5,[5]=9,[6]=1101,[8]="Enter the bark of Teldrassil near Dolanaar and defeat the termites infesting its depths.",[10]={{{162876},{162877}}},[13]={1660071},[17]=141},
+		[1660075] = {[1]="Stay a While",[2]={{162881}},[3]={{162881}},[4]=4,[5]=8,[6]=1101,[8]="Take a moment from the noise and haste and stay a while to listen to Alenna Whisperbough.",[10]={nil,{{5399902}}},[17]=141},
+		[1660085] = {[1]="Elydna's Heirloom",[2]={{161727}},[3]={{161725}},[4]=3,[5]=7,[6]=1101,[8]="Speak with Thariel Wingstroke and deliver to him the pendant of his sister, Elydna.",[10]={nil,{{5405229}}},[13]={1660016},[17]=141},
 
 		--Durotar 
 		

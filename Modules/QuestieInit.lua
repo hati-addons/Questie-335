@@ -61,6 +61,8 @@ local QuestieComms = QuestieLoader:ImportModule("QuestieComms");
 local QuestieOptions = QuestieLoader:ImportModule("QuestieOptions");
 ---@type QuestieCoords
 local QuestieCoords = QuestieLoader:ImportModule("QuestieCoords");
+---@type QuestieArrow
+local QuestieArrow = QuestieLoader:ImportModule("QuestieArrow")
 ---@type QuestieTooltips
 local QuestieTooltips = QuestieLoader:ImportModule("QuestieTooltips");
 ---@type QuestieDBMIntegration
@@ -276,6 +278,11 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
     -- ** OLD ** Questie:ContinueInit() ** START **
     QuestieTooltips:Initialize()
     QuestieCoords:Initialize()
+    if QuestieArrow and QuestieArrow.Initialize then
+        QuestieArrow:Initialize()
+    else
+        Questie:Error("[QuestieArrow] Module not loaded correctly (missing Initialize).")
+    end
     TrackerQuestTimers:Initialize()
     QuestieComms:Initialize()
 

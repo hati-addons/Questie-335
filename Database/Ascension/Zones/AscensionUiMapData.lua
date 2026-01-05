@@ -3,7 +3,50 @@ AscensionUiMapData = AscensionUiMapData or {}
 
 AscensionUiMapData.uiMapData = {
 	-- Alliance Starting Zone
-
+        [2031] = {
+        [1] = 302.51,
+        [2] = 200.0,
+        [3] = 581.66,
+        [4] = 10745.9,
+        instance = 1,
+        mapID = 2031,
+        name = "Moonlit Ossuary",
+        mapType = 3,
+        parentMapID = 10207,
+    },
+        [1230] = {
+        [1] = 230.01,
+        [2] = 153.34000000000015,
+        [3] = 1685.0,
+        [4] = 9881.67,
+        instance = 1,
+        mapID = 1230,
+        name = "Upper Ban'ethil Barrow Den",
+        mapType = 3,
+        parentMapID = 262,
+    },
+    [1231] = {
+        [1] = 380.01,
+        [2] = 253.34000000000015,
+        [3] = 1735.0,
+        [4] = 9931.67,
+        instance = 1,
+        mapID = 1231,
+        name = "Lower Ban'ethil Barrow Den",
+        mapType = 3,
+        parentMapID = 10133,
+    },
+        [1232] = {
+        [1] = 279.5999999999999,
+        [2] = 186.40000000000146,
+        [3] = 1249.8,
+        [4] = 10211.7,
+        instance = 1,
+        mapID = 1232,
+        name = "Fel Rock",
+        mapType = 3,
+        parentMapID = 258,
+    },
 	    [1243] = {
         [1] = 1450.0040000000001,
         [2] = 966.5999999999985,

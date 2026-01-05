@@ -13,6 +13,8 @@ local TrackerBaseFrame = QuestieLoader:ImportModule("TrackerBaseFrame")
 local TrackerLinePool = QuestieLoader:ImportModule("TrackerLinePool")
 ---@type TrackerQuestTimers
 local TrackerQuestTimers = QuestieLoader:ImportModule("TrackerQuestTimers")
+---@type QuestieArrow
+local QuestieArrow = QuestieLoader:ImportModule("QuestieArrow")
 
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
@@ -53,6 +55,23 @@ function QuestieOptions.tabs.tracker:Initialize()
                         QuestieTracker:Enable()
                     end
                 end
+            },
+            arrowEnabled = {
+                type = "toggle",
+                order = 2.5,
+                width = 1.5,
+                name = function() return "Enable Arrow"; end,
+                desc = function() return "Show the QuestieArrow and auto-track the nearest objective/turn-in."; end,
+                get = function() return Questie.db.profile.arrowEnabled ~= false; end,
+                set = function(_, value)
+                    Questie.db.profile.arrowEnabled = value
+                    if QuestieArrow and QuestieArrow.Refresh then
+                        if not value and QuestieArrow.ClearTarget then
+                            QuestieArrow:ClearTarget()
+                        end
+                        QuestieArrow:Refresh()
+                    end
+                end,
             },
             Space_X = QuestieOptionsUtils:HorizontalSpacer(3, 0.1),
             resetTrackerLocation = {
