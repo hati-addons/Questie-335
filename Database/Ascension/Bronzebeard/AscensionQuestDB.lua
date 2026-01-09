@@ -14,7 +14,10 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1903553]={[1]="Path to Ascension: Dungeon Finder",[2]={{75118}},[3]={{75118}},[4]=15,[5]=15,[6]=0,[8]={"Open the Dungeon Finder and queue for a dungeon!","Open the Dungeon Finder (I) / Green Eye: 0/1","Select dungeon(s) then click Find Group: 0/1"},[10]={nil,{{9903553,"Open the Dungeon Finder (I) / Green Eye: 0/1"},{9903554,"Select dungeon(s) then click Find Group: 0/1"}}},[17]=12},
 		[4420435]={[1]="Path to Ascension: Novice Rider",[2]={{3690}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=215},
 		[1903557]={[1]="Path to Ascension: Mount Up!",[2]={{3690}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to mount up!"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420435},[17]=215},
-		
+		[4420437]={[1]="Path to Ascension: Novice Rider",[2]={{7953}},[4]=6,[5]=8,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=14},
+		[1903557] = {[1]="Path to Ascension: Mount Up!",[2]={{7953}},[4]=6,[5]=8,[6]=690,[8]="Learn how to mount up!",[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420437},[17]=14},
+
+
 		--Elwynn Forest
 
 		[33]={[1]="Wolves Across the Border",[2]={{196}},[3]={{196}},[4]=1,[5]=2,[6]=1101,[7]=nil,[8]={"Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey."},[9]=nil,[10]={nil,nil,{{50432}}},[11]=nil,[12]=nil,[13]={5261},[14]=nil,[15]=nil,[16]=nil,[17]=9,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=524296,[24]=nil,[25]=nil,[26]={{72,250}}},
@@ -63,17 +66,25 @@ AscensionDB.questData = AscensionDB.questData or {
 		
 		[254008]={[1]="To Find a Cure",[2]={{254011}},[3]={{254011}},[4]=1,[5]=2,[6]=0,[7]=0,[8]={"Find the strange flower."},[10]={nil,nil,{{254005}}},[17]=1244},
 		[254009]={[1]="A Dangerous Sample",[2]={{254011}},[3]={{254011}},[4]=1,[5]=2,[6]=0,[7]=0,[8]={"Collect demon blood from a strong demon."},[10]={nil,nil,{{254006}}},[13]={254008},[17]=1244},
-		[254010]={[1]="Knowledge of the Centaurs",[2]={{254011}},[4]=2,[5]=4,[6]=0,[7]=0,[8]={"Search the centaur camp for clues to the flower's properties."},[11]=11584,[13]={254009},[17]=1244},
+		[254010]={[1]="Knowledge of the Centaurs",[2]={{254011}},[3]={{254004}},[4]=2,[5]=4,[6]=0,[7]=0,[8]={"Search the centaur camp for clues to the flower's properties."},[11]=11584,[13]={254009},[17]=1244},
 		[1660018]={[1]="Those Who Fell",[2]={{161732}},[3]={{161733}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Use the Unremarkable Stone to extract samples of spiritual unrest from the restless orcs and trolls, and present your findings to the witch of Zeb'Goro."},[10]={nil,nil,{{559155}}},[11]=559158,[17]=1244},
 		[1660019]={[1]="The Way is Shut",[2]={{161733}},[3]={{161734}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Use the amulet given to you by Swa'li to break through the magical barrier guarding the entrance to the Sinister Lair."},[10]={nil,{{2036820}},nil},[11]=559146,[13]={1660018},[17]=1244},
-		[1660020]={[1]="The Sinister Triad",[2]={{161734}},[3]={{161734}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Gather the spiritual essences of the beasts haunting the Sinister Lair. You will need one from a spider, one from a bat, and one from a serpent."},[10]={nil,nil,{{559148},{559149},{559150}}},[13]={1660018},[17]=2030},
+		[1660020]={[1]="The Sinister Triad",[2]={{161734}},[3]={{161734}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Gather the spiritual essences of the beasts haunting the Sinister Lair. You will need one from a spider, one from a bat, and one from a serpent."},[10]={nil,nil,{{559148},{559149},{559150}}},[13]={1660019},[17]=2030},
 		[1660021]={[1]="So That He May Hear Again",[2]={{161734}},[3]={{161732}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Free the elementals next to the cave. Then, speak with Esgramor and tell him of Hirsutta's true intentions."},[10]={nil,{{6649507}},{{559172},{559173},{559174},{559175}}},[13]={1660020},[17]=2030},
 		[1660022]={[1]="A Sinister Ritual",[2]={{161732}},[3]={{161732}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Confront Hirsutta the Witch and put an end to her dark ritual."},[10]={{{161790}},nil,nil},[13]={1660021},[17]=1244},
 		[1660023]={[1]="Innocents for Sinners",[2]={{161732}},[3]={{161732}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Defeat the voodoo devotees guarding the path that leads to Hirsutta."},[10]={{{161807}},nil,nil},[13]={1660021},[17]=1244},
 		[1660037]={[1]="Unease Makes Tongues Wag",[2]={{161733}},[3]={{161733}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Destroy the talking Tiki Masks around Zeb'Goro."},[10]={{{161854},{161855},{161856}},nil,nil},[11]=559146,[13]={1660018},[17]=1244},
 		[1660041]={[1]="A Door Left Ajar",[2]={{161734}},[3]={{161734}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Defeat Techla'tu, Gatekeeper, in the Sinister Lair."},[10]={{{161833},{161793},{161792}},nil,nil},[13]={1660019},[17]=2030},
-		[1660061]={[1]="Esgramor's Master",[2]={{161732}},[4]=4,[5]=8,[6]=0,[7]=0,[8]={"Speak with Karagar in Razor Hill."},[10]={nil,{{9070546}},nil},[13]={1660022},[17]=1244},
-
+		[1660061]={[1]="Esgramor's Master",[2]={{161732}},[3]={{162839}},[4]=4,[5]=8,[6]=0,[7]=0,[8]={"Speak with Karagar in Razor Hill."},[10]={nil,{{9070546}},nil},[13]={1660022},[17]=1244},
+		[254011]={[1]="Shinies!",[2]={{254004}},[4]=2,[5]=4,[6]=0,[7]=0,[8]={"Collect metallic debris."},[10]={nil,nil,{{254007}}},[13]={254010},[17]=14},
+		[1660062] = {[1]="Echoes of Hirsutta",[2]={{162839}},[3]={{162839}},[4]=4,[5]=8,[6]=690,[8]="Defeat naga in Rivenruin Cave on the Durotar coast.",[10]={{{162834},{162835},{162916}}},[13]={1660061},[17]=14},
+		[1660063] = {[1]="Auction the Past",[2]={{162840}},[3]={{162840}},[4]=4,[5]=8,[6]=690,[8]="Recover Elven Relics of Old from the ruins in Rivenruin Cave, Durotar.",[10]={nil,nil,{{558966}}},[17]=14},
+		[1660065]={[1]="Stay a While",[2]={{162841}},[3]={{162841}},[4]=6,[5]=8,[6]=0,[7]=0,[8]={"Take a moment from the noise and haste and stay a while to listen to Bagamul Skyfang."},[10]={nil,{{5954015}}},[17]=14},
+		[1660064] = {[1]="Durotar's Dire Drought",[2]={{162838}},[3]={{162838}},[4]=6,[5]=8,[6]=690,[8]="Fill the pitcher with water from one of the pools outside Razor Hill, then give the mine peons a drink.",[10]={{{162836,"Thirsty peons served"}},nil,{{558974,"Full Dirgran's Pitcher"}}},[11]=558973,[17]=14},
+		[254012] = {[1]="The Queen's Decree",[2]={{254012}},[3]={{254012}},[4]=5,[5]=7,[6]=0,[8]="Slay harpies for Queen Erethina.",[10]={{{3115},{3116}}},[13]={254011},[17]=14},
+		[254013] = {[1]="Avianna's Rose",[2]={{254012}},[3]={{254013}},[4]=6,[5]=10,[6]=0,[8]="Bring the information you learned to Sakari in Orgrimmar.",[13]={254012},[17]=14},
+		[254014] = {[1]="The Last Piece",[2]={{254013}},[3]={{254014}},[4]=6,[5]=10,[6]=690,[8]="Find Ouru’gai Crystal in the Barrens.",[10]={nil,nil,{{254008}}},[13]={254014},[17]=1413},
+		[254015] = {[1]="Reversion",[2]={{254014}},[3]={{254014}},[4]=6,[5]=10,[6]=690,[8]="Watch Sakari create the cure.",[10]={{{254016}},{{5777365}}},[13]={254014},[17]=1413},
 		--Mulgore
 
 		[1660030] = {[1]="Death and Tribute",[2]={{161817}},[3]={{161818}},[4]=3,[5]=4,[6]=690,[8]="Slay seven Grimtotem Marauders in Red Cloud Mesa, take their manes as proof, and deliver them to Lady Redhorn’s mistress.",[10]={nil,nil,{{559156}}},[17]=1245},

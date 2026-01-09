@@ -1008,7 +1008,14 @@ TrackerLinePool.OnClickQuest = function(self, button)
         end
     elseif TrackerUtils:IsBindTrue(Questie.db.profile.trackerbindUntrack, button) then
         if (IsModifiedClick("CHATLINK") and ChatEdit_GetActiveWindow()) then
-            ChatEdit_InsertLink(QuestieLink:GetQuestLinkString(self.Quest.level, self.Quest.name, self.Quest.Id))
+            -- Follow Ascension's native pattern: get quest log index and use native linking
+            local questLogIndex = GetQuestLogIndexByID(self.Quest.Id)
+            if questLogIndex then
+                local questLink = GetQuestLink(questLogIndex)
+                if questLink then
+                    ChatEdit_InsertLink(questLink)
+                end
+            end
         else
             QuestieTracker:UntrackQuestId(self.Quest.Id)
             local questLogFrame = QuestLogExFrame or ClassicQuestLog or QuestLogFrame

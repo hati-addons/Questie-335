@@ -44,6 +44,11 @@ AscensionDB.itemData = AscensionDB.itemData or {
 		[559173] = {'Earth Elemental Shackles',nil,{2392807},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
 		[559174] = {'Air Elemental Shackles',nil,{3478505},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
 		[559175] = {'Water Elemental Shackles',nil,{4541078},nil,nil,nil,nil,nil,1,0,0,4,0,nil,{1660021}},
+		[558973] = {[1]="Empty Dirgran's Pitcher",[9]=1,[10]=0,[12]=12,[13]=0,[15]={1660064}},
+		[558974] = {[1]="Full Dirgran's Pitcher",[3]={5954415},[9]=1,[10]=0,[12]=12,[13]=0,[15]={1660064}},
+		[254007] = {[1]="Metallic Debris",[3]={254003},[9]=1,[10]=0,[12]=12,[13]=0,[15]={254011}},
+		[558966] = {[1]="Elven Relic of Old",[3]={2300551,2300558,2300556,2300555,2300553,2300554,2300557},[10]=0,[12]=0,[13]=0,[15]={1660063}},
+		[254008] = {[1]="Ouru'Gai Crystal",[3]={254002},[9]=1,[10]=0,[12]=12,[13]=0,[15]={254014}},
 
 		--Mulgore
 
