@@ -495,6 +495,7 @@ function _Qframe:ShouldBeHidden()
     if (not profile.enabled) -- all quest icons disabled
         or ((not profile.enableMapIcons) and (not self.miniMapIcon))
         or ((not profile.enableMiniMapIcons) and (self.miniMapIcon))
+        or ((self.miniMapIcon) and profile.hideMiniMapQuestIcons and (iconType == "available" or iconType == "complete"))
         or ((not profile.enableTurnins) and iconType == "complete")
         or ((not profile.enableObjectives) and (iconType == "monster" or iconType == "object" or iconType == "event" or iconType == "item"))
         or (profile.hideUnexploredMapIcons and not QuestieMap.utils:IsExplored(self.UiMapID, self.x, self.y)) -- Hides unexplored map icons

@@ -54,6 +54,7 @@ function QuestieOptionsDefaults:Load()
             enableObjectives = true,
             enableTurnins = true,
             enableAvailable = true,
+            hideMiniMapQuestIcons = false,
             enableTooltips = true,
             enableTooltipsItemID = false,
             enableTooltipsNPCID = false,

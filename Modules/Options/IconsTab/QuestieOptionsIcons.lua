@@ -469,6 +469,19 @@ function QuestieOptions.tabs.icons:Initialize()
                             QuestieQuest:ToggleNotes(value)
                         end,
                     },
+                    hideMiniMapQuestIcons = {
+                        type = "toggle",
+                        order = 4.15,
+                        name = function() return l10n('Hide Questie minimap quest icons'); end,
+                        desc = function() return l10n('Hides available and completed quest icons on the minimap only. Objective icons are unaffected.'); end,
+                        width = 3.1,
+                        disabled = function() return ((not Questie.db.profile.enabled) or (not Questie.db.profile.enableMiniMapIcons)); end,
+                        get = function() return Questie.db.profile.hideMiniMapQuestIcons; end,
+                        set = function(info, value)
+                            Questie.db.profile.hideMiniMapQuestIcons = value
+                            QuestieQuest:SmoothReset()
+                        end,
+                    },
                     alwaysGlowMinimap = {
                         type = "toggle",
                         order = 4.2,
