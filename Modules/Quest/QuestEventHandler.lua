@@ -320,10 +320,12 @@ function _QuestEventHandler:QuestTurnedIn(questId, xpReward, moneyReward)
     QuestLogCache.RemoveQuest(questId)
     QuestieQuest:SetObjectivesDirty(questId) -- is this necessary? should whole quest.Objectives be cleared at some point of quest removal?
 
-    QuestieQuest:CompleteQuest(questId)
-    QuestieJourney:CompleteQuest(questId)
-    QuestieAnnounce:CompletedQuest(questId)
-	questLog[questId] = nil
+    -- Don't immediately mark as complete, wait for QUEST_REMOVED to confirm it was actually turned in
+    -- This prevents completed quests from being saved as turned in when abandoned
+    -- QuestieQuest:CompleteQuest(questId)
+    -- QuestieJourney:CompleteQuest(questId)
+    -- QuestieAnnounce:CompletedQuest(questId)
+	-- questLog[questId] = nil
 
 QuestieCombatQueue:Queue(function()
     QuestieTracker:Update()
@@ -345,7 +347,13 @@ function _QuestEventHandler:QuestRemoved(questId)
 
     -- QUEST_TURNED_IN was called before QUEST_REMOVED --> quest was turned in
     if questLog[questId].state == QUEST_LOG_STATES.QUEST_TURNED_IN then
-        Questie:Debug(Questie.DEBUG_INFO, "Quest:", questId, "was turned in before. Nothing do to.")
+        Questie:Debug(Questie.DEBUG_INFO, "Quest:", questId, "was turned in before. Completing quest.")
+        
+        -- Now that we confirmed the quest was actually turned in (not abandoned), mark it as complete
+        QuestieQuest:CompleteQuest(questId)
+        QuestieJourney:CompleteQuest(questId)
+        QuestieAnnounce:CompletedQuest(questId)
+        
         questLog[questId] = nil
         return
     end
@@ -476,13 +484,16 @@ function _QuestEventHandler:CleanupRemovedQuestsFallback()
             local questId = removedQuestIds[i]
 
             -- Quest disappeared from log (abandoned or auto-turned-in)
-            local quest = QuestieDB.GetQuest(questId)
-            local wasComplete = (Questie.db.char.complete and Questie.db.char.complete[questId]) or (quest and quest.WasComplete)
+            -- Check if this quest was confirmed as turned in (not just objectives complete)
+            local wasTurnedIn = questLog[questId] and questLog[questId].state == QUEST_LOG_STATES.QUEST_TURNED_IN
+            local wasAlreadyComplete = Questie.db.char.complete and Questie.db.char.complete[questId]
 
             QuestLogCache.RemoveQuest(questId)
             QuestieQuest:SetObjectivesDirty(questId)
 
-            if wasComplete then
+            -- Only mark as complete if it was actually turned in OR already marked complete from previous session
+            -- Don't use quest.WasComplete because that's set when objectives complete, not when quest is turned in
+            if wasTurnedIn or wasAlreadyComplete then
                 QuestieQuest:CompleteQuest(questId)
             else
                 QuestieQuest:AbandonedQuest(questId)

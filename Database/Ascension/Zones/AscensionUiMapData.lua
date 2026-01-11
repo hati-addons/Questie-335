@@ -171,6 +171,40 @@ AscensionUiMapData.uiMapData = {
 		name        = "Coldridge Valley",
 		},
 
+        [1215] = {
+        [1] = 330.0,
+        [2] = 220.0,
+        [3] = 245.0,
+        [4] = -6020.0,
+        instance = 0,
+        mapID = 1215,
+        name = "Coldridge Pass",
+        mapType = 3,
+        parentMapID = 10120,
+    },
+        [1216] = {
+        [1] = 505.5,
+        [2] = 337.0,
+        [3] = 32.75,
+        [4] = -5313.0,
+        instance = 0,
+        mapID = 1216,
+        name = "The Grizzled Den",
+        mapType = 3,
+        parentMapID = 10121,
+    },
+        [1214] = {
+        [1] = 374.01,
+        [2] = 249.34000000000015,
+        [3] = -1542.99,
+        [4] = -5486.83,
+        instance = 0,
+        mapID = 1214,
+        name = "Gol'bolar Quarry",
+        mapType = 3,
+        parentMapID = 10119,
+    },
+
 	-- Horde Starting Zone
         [1219] = {
         [1] = 270.0,

@@ -10,17 +10,17 @@ AscensionDB.questData = AscensionDB.questData or {
 		[580168]={[1]="Path to Ascension: Less Running, More Ressing",[2]={{75118}},[3]={{75118}},[4]=8,[5]=8,[6]=0,[8]={"Cast Resurrect in Closest Town or Capital City next time you die.","Resurrect in Closest Town or Capital: 0/1"},[10]={nil,{{9908168,"Resurrect in Closest Town or Capital: 0/1"}}},[17]=nil,[30]=60},
 		[4420430]={[1]="Path to Ascension: Novice Rider",[2]={{97921}},[3]={{97921}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to ride and claim your first mount.","Learn Novice Riding from the Riding Trainer: 0/1"},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=12,[30]=60},
 		[4420439] = {[1]="Path to Ascension: Novice Rider",[2]={{449169}},[4]=4,[5]=8,[6]=1101,[8]="Learn how to ride and claim your first mount.",[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=141,},
-		[1903556]={[1]="Path to Ascension: Mount Up!",[2]={{97921,449169}},[3]={{97921,449169}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to mount up!","Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420430},[17]=12,[30]=60},
+		[1903556]={[1]="Path to Ascension: Mount Up!",[2]={{97921,449169,7954}},[3]={{97921,449169,7954}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to mount up!","Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420430,4420432},[17]=nil,[30]=60},
 		[1903553]={[1]="Path to Ascension: Dungeon Finder",[2]={{75118}},[3]={{75118}},[4]=15,[5]=15,[6]=0,[8]={"Open the Dungeon Finder and queue for a dungeon!","Open the Dungeon Finder (I) / Green Eye: 0/1","Select dungeon(s) then click Find Group: 0/1"},[10]={nil,{{9903553,"Open the Dungeon Finder (I) / Green Eye: 0/1"},{9903554,"Select dungeon(s) then click Find Group: 0/1"}}},[17]=12},
 		[4420435]={[1]="Path to Ascension: Novice Rider",[2]={{3690}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=215},
 		[1903557]={[1]="Path to Ascension: Mount Up!",[2]={{3690}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to mount up!"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420435},[17]=215},
 		[4420437]={[1]="Path to Ascension: Novice Rider",[2]={{7953}},[4]=6,[5]=8,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=14},
 		[1903557] = {[1]="Path to Ascension: Mount Up!",[2]={{7953}},[4]=6,[5]=8,[6]=690,[8]="Learn how to mount up!",[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420437},[17]=14},
-
+		[4420432] = {[1]="Path to Ascension: Novice Rider",[2]={{7954}},[3]={{7954}},[4]=5,[5]=9,[6]=1101,[8]="Learn how to ride and claim your first mount.",[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=1},
+		
 
 		--Elwynn Forest
 
-		[33]={[1]="Wolves Across the Border",[2]={{196}},[3]={{196}},[4]=1,[5]=2,[6]=1101,[7]=nil,[8]={"Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey."},[9]=nil,[10]={nil,nil,{{50432}}},[11]=nil,[12]=nil,[13]={5261},[14]=nil,[15]=nil,[16]=nil,[17]=9,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=524296,[24]=nil,[25]=nil,[26]={{72,250}}},
 		[17000]={[1]="Stolen Supplies",[2]={{250}},[3]={{250}},[4]=5,[5]=9,[6]=1101,[7]=nil,[8]={"Return the Stolen Supplies to Pa Maclure."},[9]=nil,[10]={nil,{{96000,"Retrieve the Stolen Supplies"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12,[18]=nil,[19]=nil,[20]=nil,[21]=nil,[22]=nil,[23]=nil,[24]=nil,[25]=nil,[26]={{72,25}}},
 		[100073]={[1]="Supply Run",[2]={{241}},[3]={{241}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Recover 4 Stolen Supply Crates from the Bandit Bastion, east of Goldshire.","","- Stolen Goods x 4"},[9]=nil,[10]={nil,{{9900730,"Stolen Supply Crate"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
 		[17001]={[1]="Extravagant Order",[2]={{241}},[3]={{241}},[4]=6,[5]=8,[6]=1101,[7]=nil,[8]={"","Return 4 Gem Encrusted Spider Silk to Tharynn Bouden.","","- Gem Encrusted Spider Silk x 4"},[9]=nil,[10]={nil,nil,{{157001,"Gem Encrusted Spider Silk"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
@@ -45,7 +45,30 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1660005]={[1]="The Threat Swept Downstream",[2]={{161705}},[3]={{161705}},[4]=3,[5]=6,[6]=1101,[7]=nil,[8]={"Defeat the Defias lurking in the ruined tower and thin the ranks of the Shadewell murlocs atop the waterfall, across the rope bridge."},[9]=nil,[10]={[1]={{161736,"Defias Plunderer slain"},{161716,"Shadewell Murloc slain"}}},[11]=nil,[12]=nil,[13]={1660004},[14]=nil,[15]=nil,[16]=nil,[17]=9},
 		[1660060]={[1]="Stay a While",[2]={{162806}},[3]={{162806}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Take a moment from the noise and haste and stay a while to listen to Aliscar Lend.","","- Listen to Aliscar Lend x 1"},[9]=nil,[10]={[1]={{162943,"Listen to Aliscar Lend"}}},[11]=nil,[12]=nil,[13]=nil,[14]=nil,[15]=nil,[16]=nil,[17]=12},
 		[100071]={[1]="Defias Disruption",[2]={{6778}},[3]={{6778}},[4]=6,[5]=8,[6]=0,[7]=nil,[8]={"","Thin the ranks of the Defias at the Bandit Bastion, east of Goldshire.","","- Defias Bandit x 6","- Defias Rogue Wizard x 4"},[9]=nil,[10]={[1]={{116,"Defias Bandit slain"},{474,"Defias Rogue Wizard slain"}}},[11]=nil,[12]=nil,[13]={47},[14]=nil,[15]=nil,[16]=nil,[17]=12},
-		
+		 
+		--Dun Morogh
+
+		[254000] = {[1]="A Small Mistake",[2]={{254000}},[3]={{254000}},[4]=2,[5]=2,[6]=1101,[8]="Search the Frostmane Encampment for Clues.",[10]={nil,nil,{{254000}}},[17]=1239},
+		[254001] = {[1]="We Found Her!",[2]={{254000}},[3]={{254000}},[4]=2,[5]=2,[6]=1101,[8]="Search for Nylrisa to the south-west of Brewnall Village.",[10]={nil,nil,{{254001}}},[13]={254000},[17]=1239},
+		[254002] = {[1]="The Scout's Favor",[2]={{254000}},[3]={{254002}},[4]=1,[5]=2,[6]=1101,[8]="Slay 4 Rockjaw Raiders and meet with Mountaineer Tagnur on the other end of the tunnel.",[10]={{{1718}},nil,nil},[13]={57393},[17]=1239},
+		[254003] = {[1]="Old Mirsinth",[2]={{254002}},[3]={{254003}},[4]=1,[5]=4,[6]=1101,[8]="Find the exiled Frostmane troll.",[13]={254002},[17]=1},
+		[1660006] = {[1]="Smoke on the Wind",[2]={{161718}},[3]={{161719}},[4]=2,[5]=6,[6]=1101,[8]="Follow in the footsteps of Grelbin, son of Groldha, and investigate the source of the smoke.",[10]={{{2300507},{2300508},{2300509},{2300510}}},[17]=1239},
+		[1660007] = {[1]="A Promising Path",[2]={{161719}},[3]={{161720}},[4]=2,[5]=6,[6]=0,[8]="Follow the mountain path to uncover the location of the mysterious group.",[10]={nil,{{5401381}},nil},[13]={1660006},[17]=1239},
+		[1660008] = {[1]="A Fitting Disguise",[2]={{161720}},[3]={{161720}},[4]=2,[5]=6,[6]=1101,[8]="Slay Radiant fanatics and collect their armor pieces. Deliver them to Arathror so he can craft a disguise.",[10]={nil,nil,{{559142}}},[13]={1660007},[17]=1239},
+		[1660009] = {[1]="His Radiant Majesty",[2]={{161720}},[3]={{161718}},[4]=2,[5]=6,[6]=1101,[8]="Tell Arathror when you’re ready to don the disguise. Then infiltrate Radiance Town and slay the cult leader, His Radiant Majesty.",[10]={{{161775}},{{5883992}},nil},[13]={1660008},[17]=1239},
+		[1660010] = {[1]="Deciphering Radiation",[2]={{161820}},[3]={{161820}},[4]=2,[5]=6,[6]=0,[8]="Slay radioactive slimes in Radiance Town and use the Contamination Extractor on their corpses to harvest mutagen.",[10]={nil,nil,{{559162}}},[11]=559161,[17]=1239},
+		[1660011] = {[1]="Soaking the Masses",[2]={{161839}},[3]={{161839}},[4]=2,[5]=6,[6]=0,[8]="Use the Radiation Sprayer to douse Radiaville’s townsfolk with radiation.",[10]={nil,{{5888887}},nil},[11]=559163,[17]=1239},
+		[1660039] = {[1]="Sever the Right Hand",[2]={{161720}},[3]={{161820}},[4]=2,[5]=6,[6]=1101,[8]="Defeat Right Hand of His Majesty in Radiance Town.",[10]={{{161835}},nil,nil},[13]={1660008},[17]=1239},
+		[1660076] = {[1]="A Growing Business",[2]={{162882}},[3]={{162883}},[4]=4,[5]=8,[6]=1101,[8]="Speak with Eyma Thunderbrew at the Thunderbrew Distillery in Kharanos.",[17]=1239},
+		[1660077] = {[1]="Thunderbrew's Hop",[2]={{162883}},[3]={{162883}},[4]=6,[5]=10,[6]=1101,[8]="Harvest seven Thunderbrew Hops from the Thunderbrew Distillery grounds in Kharanos.",[10]={nil,nil,{{558964}}},[13]={1660076},[17]=28},
+		[1660080] = {[1]="Stay a While",[2]={{162901}},[3]={{162901}},[4]=6,[5]=10,[6]=1101,[8]="Take a moment from the noise and haste and stay a while to listen to Gravedigger Nonuid.",[10]={nil,{{5855933}},nil},[17]=1},
+		[1660079] = {[1]="Live-Fire Demo",[2]={{162891}},[3]={{162891}},[4]=6,[5]=10,[6]=1101,[8]="Test Gornarn's Blunderbuss and ammo on the practice targets up on the ridge above Kharanos.",[10]={{{162917}},nil,nil},[11]=558950,[17]=1},
+		[1660078] = {[1]="Bots on Strike",[2]={{162884}},[3]={{162884}},[4]=6,[5]=10,[6]=1101,[8]="Defeat Out-of-Control Automata clogging the Kharanos tunnel and recover Reusable Mechanical Parts from their remains.",[10]={{{162888},{162889},{162890}},nil,{{558965}}},[17]=1},
+		[254004] = {[1]="A Brother's Betrayal",[2]={{254003}},[3]={{254003}},[4]=3,[5]=7,[6]=0,[8]="Get Mirsinth the Exile’s totem from Jun’Kon at Frostmane Hold.",[10]={nil,nil,{{254002}}},[13]={254003},[17]=1},
+		[254005] = {[1]="The True Story",[2]={{254003}},[3]={{254000}},[4]=6,[5]=10,[6]=0,[8]="Find Efry Cogspark at the Stoutlager Inn in Thelsamar.",[13]={254004},[17]=1},
+		[500005] = {[1]="Timber for the Coldhewn",[2]={{765556}},[3]={{765556}},[4]=6,[5]=10,[6]=1101,[8]="Chop down Dun Morogh trees near Coldhewn Camp and return with 12 Frostpine Logs.",[17]=1},
+		[500006] = {[1]="Icehide the Unbroken",[2]={{764536}},[3]={{764536}},[4]=7,[5]=11,[6]=1101,[8]="You’ve been asked to track and slay Icehide, the elite Frostsaber haunting Coldhewn Ridge above the camp.",[10]={{{76555}},nil,nil},[17]=1},
+
 		--Teldrassil
 			
 		[1660012] = {[1]="The Carrion Road",[2]={{161725}},[3]={{161726}},[4]=2,[5]=6,[6]=1101,[8]="Walk the Carrion Path and defeat its guardians.",[10]={{{161787}},{{5166357}}},[17]=1243},
@@ -85,6 +108,7 @@ AscensionDB.questData = AscensionDB.questData or {
 		[254013] = {[1]="Avianna's Rose",[2]={{254012}},[3]={{254013}},[4]=6,[5]=10,[6]=0,[8]="Bring the information you learned to Sakari in Orgrimmar.",[13]={254012},[17]=14},
 		[254014] = {[1]="The Last Piece",[2]={{254013}},[3]={{254014}},[4]=6,[5]=10,[6]=690,[8]="Find Ouru’gai Crystal in the Barrens.",[10]={nil,nil,{{254008}}},[13]={254014},[17]=1413},
 		[254015] = {[1]="Reversion",[2]={{254014}},[3]={{254014}},[4]=6,[5]=10,[6]=690,[8]="Watch Sakari create the cure.",[10]={{{254016}},{{5777365}}},[13]={254014},[17]=1413},
+		
 		--Mulgore
 
 		[1660030] = {[1]="Death and Tribute",[2]={{161817}},[3]={{161818}},[4]=3,[5]=4,[6]=690,[8]="Slay seven Grimtotem Marauders in Red Cloud Mesa, take their manes as proof, and deliver them to Lady Redhorn’s mistress.",[10]={nil,nil,{{559156}}},[17]=1245},
