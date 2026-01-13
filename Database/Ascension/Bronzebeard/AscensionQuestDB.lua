@@ -13,11 +13,10 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1903556]={[1]="Path to Ascension: Mount Up!",[2]={{97921,449169,7954}},[3]={{97921,449169,7954}},[4]=6,[5]=8,[6]=0,[8]={"Learn how to mount up!","Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420430,4420432},[17]=nil,[30]=60},
 		[1903553]={[1]="Path to Ascension: Dungeon Finder",[2]={{75118}},[3]={{75118}},[4]=15,[5]=15,[6]=0,[8]={"Open the Dungeon Finder and queue for a dungeon!","Open the Dungeon Finder (I) / Green Eye: 0/1","Select dungeon(s) then click Find Group: 0/1"},[10]={nil,{{9903553,"Open the Dungeon Finder (I) / Green Eye: 0/1"},{9903554,"Select dungeon(s) then click Find Group: 0/1"}}},[17]=12},
 		[4420435]={[1]="Path to Ascension: Novice Rider",[2]={{3690}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=215},
-		[1903557]={[1]="Path to Ascension: Mount Up!",[2]={{3690}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to mount up!"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420435},[17]=215},
+		[1903557]={[1]="Path to Ascension: Mount Up!",[2]={{3690,7953,4773}},[3]={{3690,7953,4773}},[4]=7,[5]=9,[6]=0,[7]=0,[8]={"Learn how to mount up!"},[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420434,4420435,4420437},[17]=nil},
 		[4420437]={[1]="Path to Ascension: Novice Rider",[2]={{7953}},[4]=6,[5]=8,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=14},
-		[1903557] = {[1]="Path to Ascension: Mount Up!",[2]={{7953}},[4]=6,[5]=8,[6]=690,[8]="Learn how to mount up!",[10]={nil,{{9903556,"Pets Tab (Shift+P), Mounts Tab, Summon Mount: 0/1"}}},[13]={4420437},[17]=14},
 		[4420432] = {[1]="Path to Ascension: Novice Rider",[2]={{7954}},[3]={{7954}},[4]=5,[5]=9,[6]=1101,[8]="Learn how to ride and claim your first mount.",[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=1},
-		
+		[4420434]={[1]="Path to Ascension: Novice Rider",[2]={{4773}},[3]={{4773}},[4]=6,[5]=8,[6]=0,[7]=0,[8]={"Learn how to ride and claim your first mount."},[10]={nil,{{9942043,"Learn Novice Riding from the Riding Trainer: 0/1"}}},[17]=85},
 
 		--Elwynn Forest
 
@@ -66,7 +65,7 @@ AscensionDB.questData = AscensionDB.questData or {
 		[1660078] = {[1]="Bots on Strike",[2]={{162884}},[3]={{162884}},[4]=6,[5]=10,[6]=1101,[8]="Defeat Out-of-Control Automata clogging the Kharanos tunnel and recover Reusable Mechanical Parts from their remains.",[10]={{{162888},{162889},{162890}},nil,{{558965}}},[17]=1},
 		[254004] = {[1]="A Brother's Betrayal",[2]={{254003}},[3]={{254003}},[4]=3,[5]=7,[6]=0,[8]="Get Mirsinth the Exile’s totem from Jun’Kon at Frostmane Hold.",[10]={nil,nil,{{254002}}},[13]={254003},[17]=1},
 		[254005] = {[1]="The True Story",[2]={{254003}},[3]={{254000}},[4]=6,[5]=10,[6]=0,[8]="Find Efry Cogspark at the Stoutlager Inn in Thelsamar.",[13]={254004},[17]=1},
-		[500005] = {[1]="Timber for the Coldhewn",[2]={{765556}},[3]={{765556}},[4]=6,[5]=10,[6]=1101,[8]="Chop down Dun Morogh trees near Coldhewn Camp and return with 12 Frostpine Logs.",[17]=1},
+		[500005] = {[1]="Timber for the Coldhewn",[2]={{765556}},[3]={{765556}},[4]=6,[5]=10,[6]=1101,[8]="Chop down Dun Morogh trees near Coldhewn Camp and return with 12 Frostpine Logs.",[10]={nil,nil,{{662336}}},[17]=1},
 		[500006] = {[1]="Icehide the Unbroken",[2]={{764536}},[3]={{764536}},[4]=7,[5]=11,[6]=1101,[8]="You’ve been asked to track and slay Icehide, the elite Frostsaber haunting Coldhewn Ridge above the camp.",[10]={{{76555}},nil,nil},[17]=1},
 
 		--Teldrassil
@@ -109,6 +108,28 @@ AscensionDB.questData = AscensionDB.questData or {
 		[254014] = {[1]="The Last Piece",[2]={{254013}},[3]={{254014}},[4]=6,[5]=10,[6]=690,[8]="Find Ouru’gai Crystal in the Barrens.",[10]={nil,nil,{{254008}}},[13]={254014},[17]=1413},
 		[254015] = {[1]="Reversion",[2]={{254014}},[3]={{254014}},[4]=6,[5]=10,[6]=690,[8]="Watch Sakari create the cure.",[10]={{{254016}},{{5777365}}},[13]={254014},[17]=1413},
 		
+		--Tirisfal Glades
+
+		[363] = {"Rude Awakening",{{1568}},{{1569}},1,1,16,nil,{"Speak with Shadow Priest Sarvis."},nil,{{{1512}},nil,nil},nil,nil,nil,nil,nil,nil,154,nil,nil,nil,nil,364,524296,nil,nil,{{68,75}}},
+		[6395] = {[1]="Marla's Last Wish",[2]={{1661}},[3]={{1661}},[4]=3,[5]=5,[6]=690,[8]="Bring Samuel Fipps' Remains to Marla's Grave, then return to Novice Elreth.",[10]={{{1919}},{{178090,"Samuel's Remains Buried"}},{{16333}}},[13]={364},[17]=1240,[21]={16333},[27]={{nil,4,"Samuel's Remains Buried",0,{{"object",178090}}}}},
+		[1660024]={[1]="Monsters With Noble Intentions",[2]={{161739}},[3]={{161740}},[4]=3,[5]=6,[6]=0,[7]=0,[8]={"Speak with Riscell Cain at the Heritage League camp."},[17]=1240},
+		[1660025] = {[1]="Restless Family Members",[2]={{161740}},[3]={{161740}},[4]=3,[5]=6,[6]=690,[8]="Purify the remains of Riscell’s deceased relatives in the Cain Family Crypt, and send their spirits back to the Afterlife.",[10]={{{161762},{161763},{161764},{161765}},nil,nil},[13]={1660024},[17]=1240},
+		[1660026] = {[1]="An Unspeakable Secret",[2]={{161740}},[3]={{161741}},[4]=3,[5]=6,[6]=690,[8]="Retrieve the key fragments held by the manor’s majordomo, maid, and stablemaster.",[10]={nil,nil,{{559138},{559139},{559140}}},[13]={1660025},[17]=1240},
+		[1660028] = {[1]="A Noble Heritage",[2]={{161747}},[3]={{161747}},[4]=3,[5]=6,[6]=690,[8]="Explore Cain Family Manor and recover whatever valuables remain. Then bring them to Thris.",[10]={nil,nil,{{559164},{559165},{559166},{559167}}},[13]={1660025},[17]=1240},
+		[1660027] = {[1]="The True Heir of the Cains",[2]={{161741}},[4]=3,[5]=6,[6]=690,[8]="Use the key to access the basement and defeat the creature within.",[10]={{{161757}}},[13]={1660026},[17]=1240},
+		[1660029] = {[1]="The Friends We Make Along the Way",[2]={{161742}},[3]={{161742}},[4]=3,[5]=6,[6]=690,[8]="Slay the creatures prowling Cain Manor: zombies, ghouls, and bears.",[10]={{{161743},{161752},{161749}},nil,nil},[13]={1660025},[17]=1240},
+		[1660042] = {[1]="I'm Home",[2]={{161746}},[3]={{161746}},[4]=3,[5]=6,[6]=690,[8]="Defeat the Hound of House Cain behind the manor.",[10]={{{161836}},nil,nil},[13]={1660025},[17]=1240},
+		[1660050] = {[1]="Apothecary Flemer",[2]={{161742}},[3]={{162843}},[4]=4,[5]=8,[6]=690,[8]="Speak with Apothecary Flemer in Brill.",[10]={nil,nil,nil},[13]={1660029},[17]=1240},
+		[254064] = {[1]="The Nature of Freedom",[2]={{749136}},[3]={{749136}},[4]=4,[5]=8,[6]=690,[8]="Test Rod Toxicstrike's concoction on 3 zombies, 3 skeletons, 3 banshees, and Mallek the Tormented",[10]={{{1522},{1530},{1534},{254584}},{{2306601},{2306602},{2306603},{2306604}},nil},[11]=354655,[17]=85},
+		[1660052] = {[1]="Spotless Standing",[2]={{162844}},[3]={{162844}},[4]=5,[5]=9,[6]=690,[8]="Find the Forsaken Rebels entrenched along the shores of Brightwater Lake and put them down.",[10]={{{162857},{162853},{162854}},nil,nil},[17]=85},
+		[1660054] = {[1]="Stay a While",[2]={{162847}},[3]={{162847}},[4]=4,[5]=8,[6]=690,[8]="Take a moment from the noise and haste and stay a while to listen to Dark Priestess Ashara.",[10]={nil,{{5093560}},nil},[17]=85},
+		[1660051] = {[1]="More Than the Sum of its Parts",[2]={{162843}},[3]={{162843}},[4]=4,[5]=8,[6]=690,[8]="Collect Necrotic Spores from the fungus in the abandoned tower overlooking Brill. They come in two forms: clinging to creatures and encapsulated in mucous globules on the ground.",[10]={nil,nil,{{558953},{558954}}},[13]={1660050},[17]=85},
+		[1660053] = {[1]="Scarlet Correspondence",[2]={nil,nil,{{558955}}},[3]={{162844}},[4]=4,[5]=8,[8]="Find the Scarlet Crusade camp and put down their agents.",[10]={{{162859},{162860},{162861}},nil,nil},[17]=85},
+		[254053] = {[1]="A Humble Duty",[2]={{991483}},[3]={{991483}},[4]=7,[5]=11,[6]=690,[8]="Polish 6 gravestones at Father Alastor's cemetary and Invincible's grave at Balnir Farmstead.",[10]={nil,{{192380},{254678}},nil},[17]=85},
+		[254054] = {[1]="The Balnirs' Rest",[2]={{991483}},[3]={{991483}},[4]=8,[5]=12,[6]=690,[8]="Put the spirits of the Balnir family, Jorum Balnir, Vara Balnir, and Jarim Balnir to rest.",[10]={{{254936},{254937},{254938}},nil,nil},[17]=85},
+		[254056] = {[1]="Brewing Disarray",[2]={{764555}},[3]={{764554}},[4]=8,[5]=12,[6]=690,[8]="Slay Lieutenant Sanders in Venomweb Vale and bring his head to Apothecary Ralden",[10]={nil,nil,{{354678}}},[17]=85},
+		[254057] = {[1]="This Is Justice",[2]={{764554}},[3]={{764554}},[4]=8,[5]=12,[6]=690,[8]="Use Ralden's Transformation Elixir to infiltrate the Scarlet Monastery's courtyard and infect their supplies.",[10]={nil,{{254679}},nil},[11]=354654,[13]={254056},[17]=85},
+
 		--Mulgore
 
 		[1660030] = {[1]="Death and Tribute",[2]={{161817}},[3]={{161818}},[4]=3,[5]=4,[6]=690,[8]="Slay seven Grimtotem Marauders in Red Cloud Mesa, take their manes as proof, and deliver them to Lady Redhorn’s mistress.",[10]={nil,nil,{{559156}}},[17]=1245},

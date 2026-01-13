@@ -1,6 +1,6 @@
 ## Interface: 30300
 ## Title: Questie-335-TBC|cFF00FF00 v9.5.1|r
-## Author: Aero/Logon/Muehe/TheCrux(BreakBB)/Drejjmit/Dyaxler/Schaka/Zoey/Everyone else
+## Author: Fixed for Bronzebeard by Majed
 ## Notes: A standalone Classic QuestHelper
 ## Notes-esMX: Ayundante de misión
 ## Notes-esES: Ayundante de misión
