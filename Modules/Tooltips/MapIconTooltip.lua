@@ -297,7 +297,7 @@ end
                     end
                 end
 
-                local nextQuestInChain = QuestieDB.QueryQuestSingle(questData.questId, "nextQuestInChain")
+                local nextQuestInChain = QuestieDB.QueryQuestSingle(questData.questId, "nextQuestInChain") or 0
                 if shift and nextQuestInChain > 0 and Questie.db.profile.enableTooltipsNextInChain then
                     -- add quest chain info
                     local nextQuest = QuestieDB.GetQuest(nextQuestInChain)

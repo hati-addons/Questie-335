@@ -18,6 +18,9 @@ AscensionZoneTables.uiMapIdToAreaId = AscensionZoneTables.uiMapIdToAreaId or {
 	[2031] = 141, -- Moonlit Ossuary -> Teldrassil
 	[1230] = 141, -- Upper Ban'ethil Barrow Den -> Teldrassil
 	[1231] = 141, -- Lower Ban'ethil Barrow Den -> Teldrassil
+	[1237] = 40, -- Jangolode Mine -> Westfall
+	[1235] = 40, -- Deadmines Westfall -> Westfall
+	[1236] = 40, -- Gold Coast Quarry -> Westfall
 	--Horde
 	[1244] = 14, -- Valley of Trials -> Durotar
 	[1217] = 14, -- Burning Blade Coven -> Durotar
@@ -29,6 +32,28 @@ AscensionZoneTables.uiMapIdToAreaId = AscensionZoneTables.uiMapIdToAreaId or {
 	[1225] = 215, -- The Venture Co. Mine -> Mulgore
 	[1224] = 215, -- Palemane Rock -> Mulgore
 	
+	--Dungeons
+	[691] = 717, -- Stormwind Stockade -> The Stockade
+	[765] = 209, -- Shadowfang Keep -> Shadowfang Keep
+	[757] = 1581, -- The Deadmines -> The Deadmines
+	[681] = 2437, -- Ragefire Chasm -> Ragefire Chasm
+	[1201] = 718, -- Wailing Caverns -> Wailing Caverns
+	[689] = 719, -- Blackfathom Deeps -> Blackfathom Deeps
+	[692] = 721, -- Gnomeregan -> Gnomeregan
+	[763] = 796, -- Scarlet Monastery -> Scarlet Monastery
+	[760] = 491, -- Razorfen Kraul -> Razorfen Kraul
+	[761] = 722, -- Razorfen Downs -> Razorfen Downs
+	[751] = 2100, -- Maraudon -> Maraudon
+	[693] = 1337, -- Uldaman -> Uldaman
+	[700] = 2557, -- Dire Maul -> Dire Maul
+	[687] = 1176, -- ZulFarrak -> ZulFarrak
+	[766] = 2017, -- Stratholme -> Stratholme
+	[2022] = 1477, -- The Temple of AtalHakkar -> The Temple of AtalHakkar
+	[705] = 1584, -- Blackrock Depths -> Blackrock Depths
+	[764] = 2057, -- Scholomance -> Scholomance
+	[722] = 1583, -- Blackrock Spire -> Blackrock Spire
+	
+
 }
 
 -- Register zone sort names for custom zones so they can be used in quest zoneOrSort field
@@ -57,4 +82,17 @@ AscensionZoneTables.zoneSort = AscensionZoneTables.zoneSort or {
 	[1219] = "Skull Rock",
 	[1216] = "The Grizzled Den",
 	[1214] = "Gol'bolar Quarry",
+	[1237] = "Jangolode Mine",
+	[1235] = "Deadmines Westfall",
+	[1236] = "Gold Coast Quarry",
 }
+
+-- Optional: custom dungeon registration (merged into ZoneDB by AscensionLoader).
+-- Use this if Ascension introduces *instanced* maps that should behave like Questie dungeons.
+--
+-- AscensionZoneTables.dungeons[areaId] = {"Dungeon Name", alternativeAreaIdOrNil, parentAreaId}
+-- AscensionZoneTables.dungeonLocations[areaId] = { { parentAreaId, x, y }, ... }
+-- AscensionZoneTables.dungeonParentZones[subZoneAreaId] = parentDungeonAreaId
+AscensionZoneTables.dungeons = AscensionZoneTables.dungeons or {}
+AscensionZoneTables.dungeonLocations = AscensionZoneTables.dungeonLocations or {}
+AscensionZoneTables.dungeonParentZones = AscensionZoneTables.dungeonParentZones or {}
