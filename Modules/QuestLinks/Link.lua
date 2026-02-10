@@ -71,13 +71,15 @@ end
 ---@return string
 function QuestieLink:GetQuestLinkString(questLevel, questName, questId)
     local questLink = GetQuestLink and GetQuestLink(questId)
-    local questString = "["..questName.." ("..tostring(questId)..")]"
+    
+    -- Fix: Constructed questStrings are malformed currently in Ascension client and do not link properly in chat.
+    -- local questString = "["..questName.." ("..tostring(questId)..")]"
 
-    if Questie.db.profile.trackerShowQuestLevel then
-        questString = questString:gsub("%[", "[["..tostring(questLevel).."] ")
-    end
+    -- if Questie.db.profile.trackerShowQuestLevel then
+    --    questString = questString:gsub("%[", "[["..tostring(questLevel).."] ")
+    -- end
 
-    return questLink and questLink:gsub("%[(.-)%]", questString) or questString
+    return questLink -- and questLink:gsub("%[(.-)%]", questString) or questString
 end
 
 ---@return string
